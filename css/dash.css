@@ -1,0 +1,797 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* @media (min-width: 320px) {} // for general stylings (both, mobile && desktop)
+@media (max-width: 767px) {} // for only styles between 320px and 768px (most mobile devies)
+@media (min-width: 768px) {}  // general desktop && tablet styles if needed
+@media (min-width: 768px) and (max-width: 1024px) {} // only tablet styles
+@media (min-width: 1025px) // start with desktop styling */
+
+/* Extra small devices (phones, 600px and down) */
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ /* @media only screen and (max-width: 575.98px) and (orientation: portrait) {
+  .content-area {
+    background-color: pink;
+    background-size: contain!important;
+    background-image: url("../image/xMas.jpeg");
+    width: 100%;
+    height: 50vh!important;
+  }
+   #topBar {
+    height: 8px;
+    width: auto;
+  }
+  .inv {
+    zoom: 20%;
+    position: relative;
+  } 
+  a {
+    font-size: 8px;
+  }
+  #sidebar-container {
+    width: 32%;
+    height: auto!important;
+  }
+   .sidebar-expanded {
+    width: 80px;
+  }
+  .sidebar-collapsed {
+    width: 20px;
+  }
+ } */
+
+ /* Small devices (portrait phones, less than 768px) */
+  /* @media only screen and (max-width: 767.98px) {
+    .content-area {
+      background-color:orange;
+      background-size: contain!important;
+      background-image: url("../image/xMas.jpeg");
+      width: 100%;
+      height: 50vh!important;
+    }
+     #topBar {
+      height: 8px;
+      width: auto;
+    }
+    .inv {
+      zoom: 20%;
+      position: relative;
+    } 
+    a {
+      font-size: 8px;
+    }
+    #sidebar-container {
+      width: 32%;
+      height: auto!important;
+    }
+     .sidebar-expanded {
+      width: 80px;
+    }
+    .sidebar-collapsed {
+      width: 20px;
+    }
+   } */
+
+  /* Medium devices (portrait tablets, less than 992px) */
+  /* @media only screen and (max-width: 991.98px) {
+    .content-area {
+      background-color:blueviolet;
+      background-size: contain!important;
+      background-image: url("../image/xMas.jpeg");
+      width: 100%;
+      height: 50vh!important;
+    }
+     #topBar {
+      height: 8px;
+      width: auto;
+    }
+    .inv {
+      zoom: 20%;
+      position: relative;
+    } 
+    a {
+      font-size: 8px;
+    }
+    #sidebar-container {
+      width: 32%;
+      height: auto!important;
+    }
+     .sidebar-expanded {
+      width: 80px;
+    }
+    .sidebar-collapsed {
+      width: 20px;
+    }
+   } */
+
+  /* Large devices (desktops, less than 1200px) */
+  /* @media only screen and (max-width: 1199.98px) {
+    .content-area {
+      background-color: orangered;
+      background-size: contain!important;
+      background-image: url("../image/xMas.jpeg");
+      width: 100%;
+      height: 50vh!important;
+    }
+     #topBar {
+      height: 8px;
+      width: auto;
+    }
+    .inv {
+      zoom: 20%;
+      position: relative;
+    } 
+    a {
+      font-size: 8px;
+    }
+    #sidebar-container {
+      width: 29.4%;
+      height: auto!important;
+    }
+     .sidebar-expanded {
+      width: 80px;
+    }
+    .sidebar-collapsed {
+      width: 20px;
+    }
+   } */
+  
+  /* X-Large devices (large desktops, less than 1400px) */
+  /* @media only screen and (max-width: 1399.98px) { } */
+
+  /* END of Portrait */
+
+ /* Small devices (landscape phones, 576px and up) */
+ /* @media only screen and (min-width: 380px) and (orientation: landscape) {
+  .content-area {
+    width: auto!important;
+    height: 100vh!important;
+    background-color: green;
+    background-size: contain!important;
+    background-image: url("../image/xMas.jpeg");
+  }
+  #sidebar-container {
+    width: 15.7%;
+    height: auto!important;
+    position: relative;
+  }
+  a {
+    font-size: 6.9px;
+  }
+  #topBar {
+    width: 100%;
+  }
+ } */
+
+ /* @media only screen and (min-width: 600px) and (orientation: portrait) {
+  .content-area {
+    width: auto!important;
+    height: 100vh!important;
+    background-color: green;
+    background-size: contain!important;
+    background-image: url("../image/xMas.jpeg");
+  }
+  #sidebar-container {
+    width: 18.3%;
+    height: auto!important;
+  }
+  a {
+    font-size: 14px;
+  }
+  #topBar {
+    width: 100%;
+  }
+} */
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .content-area {
+      width: 100%;
+      height: 150vh!important;
+      position: relative!important;
+      background-size: contain!important;
+      animation: slideshow 14s infinite;
+      /* background-color: #000000; */
+      z-index: 1;
+    }
+  #sidebar-container {
+    width: 18%;
+    height: auto!important;
+  }
+   .sidebar-expanded {
+    width: 100%;
+  }
+  .sidebar-collapsed {
+    width: 20px;
+  }
+  a {
+    font-size: 12.5px;
+  }
+  #topBar {
+    width: 100%;
+  }
+  .para{
+    font-size: 14px;
+  }
+  /* @keyframes slideshow {
+    0%, 33.332% {
+      background-image: none;
+    }
+    33.333%, 66.665% {
+        background-image: url("../image/hiringTeller.png");
+    }
+    66.666%, 100% {
+        background-image: url("../image/bdayJune2024.jpg");
+    }
+  } */
+  .paused{
+    animation-play-state:paused;
+  }
+
+  /* #annivIframe {
+    z-index: 2;
+  } */
+
+  /* #backgroundVideo {
+    z-index: 1;
+    position: relative;
+  } */
+ }
+
+ /* Large devices (landscape laptops/desktops, 992px and up) */
+ /* @media only screen and (min-width: 992px) and (orientation: landscape) {
+  .content-area {
+    background-color: pink;
+    background-size: contain!important;
+    background-image: url("../image/xMas.jpeg");
+    width: 100%;
+    height: 101vh!important;
+  }
+  #sidebar-container {
+    width: 10%;
+    height: auto!important;
+  }
+   .sidebar-expanded {
+    width: 80px;
+  }
+  .sidebar-collapsed {
+    width: 20px;
+  }
+  a {
+    font-size: 14.5px;
+  }
+  #topBar {
+    width: 100%;
+  }
+ } */
+ 
+ /* Extra large devices (landscape large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  .content-area {
+    width: 95%;
+    height: 100.5vh!important;
+    position: relative!important;
+    background-size: contain!important;
+    animation: slideshow 14s infinite;
+    /* background-color: #000000; */
+    /* overflow: hidden;  */
+    z-index: 1;
+  }
+  
+  #topBar {
+    height: 8px;
+    width: auto;
+  }
+  
+  #sidebar-container {
+    width: 15%;
+    height: auto!important;
+  }
+  
+  /* Sidebar sizes when expanded and expanded */
+  .sidebar-expanded {
+    width: 80px;
+  }
+  
+  .sidebar-collapsed {
+    width: 20px;
+  }
+  
+  a {
+    font-size: 13.5px;
+  }
+  
+  .para {
+    font-size: 14px;
+  }
+
+  /* @keyframes slideshow {
+    0%, 33.332% {
+      background-image: none;
+    }
+    33.333%, 66.665% {
+        background-image: url("../image/hiringTeller.png");
+    }
+    66.666%, 100% {
+        background-image: url("../image/bdayJune2024.jpg");
+    }
+  } */
+
+  .paused{
+    animation-play-state:paused;
+  }
+
+  /* #annivIframe {
+    z-index: 2;
+  } */
+
+  /* #backgroundVideo {
+    z-index: 1;
+    position: relative;
+  } */
+}
+
+
+ /* END OF LANDSCAPE */
+
+/* 110% of 1980x1080 */
+/* @media screen and (max-width: 1745.45px) {
+    @-ms-viewport { }
+    body {
+      zoom: 100%;
+    }
+    #sidebar-container {
+      zoom: 81.88%;
+    }
+    .inv {
+      zoom: 77%;
+      position: relative;
+    }
+    #topBar {
+      zoom: 78%;
+    }
+  } */
+      /* 125% 1980x1080 */
+  @media screen and (max-width: 1536px) {
+    @-ms-viewport { }
+    .inv {
+      zoom: 72%;
+      height: 1100px;
+      position: relative;
+    }
+    #sidebar-container {
+      zoom: 75%;
+    }
+    #topBar {
+      zoom: 68%;
+    }
+  }
+
+       /* 150% * in 1980x1080/ */
+  @media screen and (max-width: 1280px){
+    @-ms-viewport { }
+    #sidebar-container {
+      zoom: 65%;
+    }
+    .inv {
+      zoom: 65%;
+      height: 1000px;
+      position: relative;
+    }
+    #topBar {
+      zoom: 56%;
+    }
+   }
+      /* 175% */
+   @media screen and (max-width: 1097.14px){
+    @-ms-viewport { }
+    body {
+      zoom: 100%;
+    }
+    #sidebar-container {
+      zoom: 60%;
+      width: 260px;
+    }
+    .inv {
+      zoom: 57%;
+      position: relative;
+    }
+    .topLogo {
+      zoom: 77%;
+    }
+    #topBar {
+      zoom: 28%;
+    }
+   }
+
+    /* 1980x1080 100%*/
+   /* @media screen and (min-width: 1920px) {
+    @-ms-viewport { }
+    body {
+      zoom: 100%;
+    }
+    #sidebar-container {
+      zoom: 90%;
+    }
+    .inv {
+      zoom: 83%;
+      position: relative;
+    }
+    #topBar {
+      zoom: 100%;
+    }
+  } */
+
+#body-row {
+  margin-left:0;
+  margin-right:0;
+  margin-top: 0;
+  /* width: 100%; */
+}
+
+/* #topBar { 
+  background-color: #e7c540;
+} */
+
+.dropdown {
+  font-size: small;
+}
+
+.inv {
+  width: 100%;
+  height: 1992px;
+}
+.containerr {
+  margin-left: 700px;
+}
+
+/* .topLogo {
+  background-color: white;
+  margin-left: 8%;
+  position: relative;
+} */
+
+#sidebar-container {
+  min-height: 100vh;
+  background-color: #333;
+  padding: 0;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+  width: 200px;
+}
+.sidebar-collapsed {
+  width: 70px;
+}
+
+/* Admin / User */
+.para {
+  color: white;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+  height: 50px;
+  color: white;
+  background-color: #292b2c;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+  height: 45px;
+  padding-left: 30px;
+}
+.sidebar-submenu {
+  font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+  background-color: #333;
+  height: 35px;
+}
+.sidebar-separator {
+  background-color: #333;
+  height: 25px;
+}
+.logo-separator {
+  background-color: #333;
+  height: 60px;
+}
+
+/* Image Payslip */
+.imgPayslip {
+  /* border: 1px solid #ddd; Gray border */
+  border-radius: 5px;  /* Rounded border */
+  width: 100px; /* Set a small width */
+  height: 40px;
+}
+
+.imgPayslip:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.x {
+  display: flex;
+  margin-top:56px;
+}
+
+.y {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.caption {
+  font-family: "Source Sans Pro", sans-serif;
+  display: block;
+  text-align: center;
+  font-style: oblique;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+content: " \f0d7";
+font-family: FontAwesome;
+display: inline;
+text-align: right;
+padding-left: 10px;
+}
+
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+content: " \f0da";
+font-family: FontAwesome;
+display: inline;
+text-align: right;
+padding-left: 10px;
+}
+
+/* Content area */
+.content-area{
+  /* background-image: url("../image/bdayJune.jpg"); */
+  /* background-image: url("../image/hiring20231.jpg"); */
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* height: 200vh; */
+  /* width: auto; */
+  margin-top: 0.7%!important;
+  margin-bottom: 0!important;
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
+
+#heroes {
+  width: 100%;
+  height: 930px;
+}
+
+#ITbell {
+  float: right;
+  position: relative;
+  width: auto;
+  height: 75%;
+}
+
+.inputFields{
+  margin-bottom: .6rem;
+}
+
+.logo{
+  margin-top: 20px;
+  width: 30%;
+  height: 7%;
+}
+
+.rightText{
+  text-align: right;
+}
+
+.card-body{
+  background-color: #fff;
+}
+
+hr{
+  color: lightgrey;
+}
+
+a{
+  color: #000000;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+.copyRight {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#reqIcon {
+  /* padding-top: -0.1%; */
+  padding-right: 0.1%;
+  position: absolute;
+  float: right;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 100%;
+}
+
+#reqIcon2 {
+  padding-right: 0.1%;
+  position: relative;
+  float: right;
+  margin-bottom: 10px;
+  margin-left: 8px!important;
+  font-size: 100%;
+}
+
+#reqIcon3 {
+  padding-right: 0.1%;
+  position: absolute;
+  /* float: left; */
+  margin-bottom: 10px;
+  margin-left: 8px;
+  font-size: 100%;
+}
+
+.notificationCount2 {
+  background-color: transparent;
+  padding-right: 0.1rem;
+  margin-top: -0.2rem !important;
+  margin-left: 0.10rem !important;
+  position: relative;
+  float: right;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 10px;
+  height: 15px !important;
+  border-radius: 5px !important;
+  width: 13px;
+
+  animation: fadeRed 0.5s ease 3.8s forwards;
+}
+
+@keyframes fadeRed {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: red;
+  }
+}
+
+.notificationCount3 {
+  background-color: transparent;
+  padding-right: 0.1rem;
+  margin-top: -0.2rem !important;
+  margin-left: 1.15rem !important;
+  position: absolute;
+  float: right;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 10px;
+  height: 15px !important;
+  border-radius: 5px !important;
+  width: 13px;
+
+  animation: fadeRedv2 0.5s ease 2.9s forwards;
+}
+
+@keyframes fadeRedv2 {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: red;
+  }
+}
+
+#calendarNotif {
+  background-color: red;
+  padding-right: 0.1%;
+  position: absolute;
+  float: right;
+  font-size: 10px;
+  width: 13px !important;
+  border-radius: 5px !important;
+  margin-top: -0.2rem;
+  margin-left: 0.68rem !important;
+
+}
+
+#notificationCount4,
+#notificationCount5,
+#notificationCount6,
+#notificationCount7 {
+  background-color: red;
+  padding-right: 0.1rem !important;
+  position: absolute;
+  float: right;
+  margin-top: -0.2rem !important;
+  margin-left: 0.57rem !important;
+  width: 13px !important;
+  border-radius: 5px !important;
+  font-size: 10px;
+}
+
+#messageNotif, #messageNotif2, #messageNotif3 {
+  background-color: red;
+  padding-right: 0.1%;
+  position: relative;
+  float: right;
+  margin-bottom: 15px;
+  border-radius: 25%;
+  font-size: 10px;
+}
+
+#logoutText {
+  background-color: #333;
+}
+
+#profileAvatar {
+  margin-left: 80px;
+  /* padding-left: 70px; */
+  border-radius: 20px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  object-position: center;
+}
+
+#welcomeText {
+  font-style: bold;
+  font-size: 120%;
+  color: white;
+  text-align: center;
+}
+
+#backgroundVideo {
+  width: 100%;
+  height: auto;
+  position: absolute; 
+  z-index: -1;
+}
+
+video {
+  width: 90vw;
+  height: auto;
+}
+
+#playVideo {
+  position: relative;
+  margin: auto; 
+  object-position: center;
+  float: center;
+  justify-content: center;
+  z-index: 9!important;
+} 
+#playVideo {
+  position: relative;
+  margin: auto; 
+  object-position: center;
+  float: center;
+  justify-content: center;
+  z-index: 9!important;
+} 
+
+video::-webkit-media-controls-panel {
+  opacity: 1;
+  /* display: block; */
+  z-index: 9;
+}
+
+/* #videoBtn {
+  
+} */

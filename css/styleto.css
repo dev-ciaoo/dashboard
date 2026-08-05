@@ -1,0 +1,530 @@
+  /* 200% */
+  @media screen and (min-width: 816.500px){
+    @-ms-viewport { }
+    .leave-form {
+      zoom: 53%;
+    }
+    .request-form {
+      zoom: 53%;
+    }
+    .pending-form {
+      zoom: 53%;
+    }
+    .login-form {
+      zoom: 69%;
+    }
+    .loans-form {
+      zoom: 69%;
+    }
+  }
+
+/* 175% */
+@media screen and (min-width: 952.571px){
+  @-ms-viewport { }
+  .leave-form {
+    zoom: 60.1%;
+  }
+  .request-form {
+    zoom: 60.1%;
+  }
+  .pending-form {
+    zoom: 60.1%;
+  }
+  .login-form {
+    zoom: 69%;
+  }
+  .loans-form {
+    zoom: 69%;
+  }
+}
+
+  /* 150% */
+@media screen and (min-width: 1116.670px){
+  @-ms-viewport { }
+  .leave-form {
+    zoom: 69%;
+  }
+  .request-form {
+    zoom: 69%;
+  }
+  .pending-form {
+    zoom: 69%;
+  }
+  .login-form {
+    zoom: 69%;
+  }
+  .loans-form {
+    zoom: 66%;
+  }
+}
+
+    /* 125% */
+@media screen and (min-width: 1346.400px){
+  @-ms-viewport { }
+  .leave-form {
+    zoom: 81%;
+  }
+  .request-form {
+    zoom: 81%;
+  }
+  .pending-form {
+    zoom: 81%;
+  }
+  .login-form {
+    zoom: 81%;
+  }
+  .loans-form {
+    zoom: 80%;
+  }
+}
+
+  /* 110 */
+@media screen and (min-width: 1534.550px) {
+  @-ms-viewport { }
+  .leave-form {
+    zoom: 91%;
+  }
+  .request-form {
+    zoom: 91%;
+  }
+  .pending-form {
+    zoom: 91%;
+  }
+  .login-form {
+    zoom: 91%;
+  }
+  .container {
+    zoom: 85%;
+  }
+  .loans-form {
+    zoom: 91%;
+  }
+}
+
+  /* 1980x1080 100%*/
+ @media screen and (min-width: 1691px) {
+  @-ms-viewport { }
+  .leave-form {
+    zoom: 100%;
+  }
+  .request-form {
+    zoom: 100%;
+  }
+  .pending-form {
+    zoom: 100%;
+  }
+  .login-form {
+    zoom: 100%;
+  }
+  .loans-form {
+    zoom: 100%;
+  }
+ }
+
+/* @media screen and (max-width: 1570px) {
+  @-ms-viewport { }
+  .leave-form {
+    zoom: 91%;
+  }
+  .request-form {
+    zoom: 91%;
+  }
+  .pending-form {
+    zoom: 91%;
+  }
+  .login-form {
+    zoom: 91%;
+  }
+} */
+
+@media screen and (max-width: 1097.14px){
+  @-ms-viewport { }
+  .login-form {
+    zoom: 67%;
+  }
+}
+
+@media screen and (min-width: 2133.33px) {
+  @-ms-viewport { }
+  .leave-form {
+    zoom: 90%;
+  }
+  .request-form {
+    zoom: 90%;
+  }
+  .pending-form {
+    zoom: 90%;
+  }
+  .login-form {
+    zoom: 90%;
+  }
+  .loans-form {
+    zoom: 90%;
+  }
+}
+
+
+body{
+  text-align: center;
+}
+
+h5{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #656565;
+  margin: 30px 0 20px;
+}
+
+h2{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #656565;
+  margin: 30px 0 20px;
+}
+
+h3{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #656565;
+  margin: 30px 0 20px;
+}
+
+.container-fluid{
+  margin: 0;
+}
+
+.login-form{
+  width: 400px;
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.row-field {
+  display: inline-block;
+}
+
+.right-input {
+  text-align: right;
+}
+
+.form-head{
+  display: inline-block;
+  background-color: #fff;
+  width: 23rem;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.leave-image{
+  height: 6rem;
+  width: 20rem;
+  margin: 0 0;
+}
+
+.logo-image{
+  height: 6rem;
+  width: 20rem;
+  /* margin: 10px 0; */
+  margin: 0 0;
+}
+
+.signin-text{
+  font-size: small;
+  color: #656565;
+  font-weight: bold;
+}
+
+.form-body{
+  text-align: left;
+}
+
+.imgheroes{
+  padding-left: 50%;
+  background-image: url('/image/heroes.jpg');
+  background-repeat: no-repeat;
+  width: 100rem;
+}
+
+/* .leave-form{
+  width: 1500px;
+  display: inline-block;
+  margin-top: 1%;
+} */
+
+.leave-form {
+    height: 700px;
+    width: 90%;
+    display: inline-block;
+    margin-top: 4%;
+}
+
+.request-form {
+    height: 700px;
+    width: 90%;
+    display: inline-block;
+    margin-top: 4%;
+}
+
+.pending-form {
+  height: 700px;
+  width: 90%;
+  display: inline-block;
+  margin-top: 4%;
+}
+
+.loans-form {
+  height: 1200px;
+  width: 100%;
+  display: inline-block;
+  margin-top: 0.1%!important;
+}
+
+#micro{
+  float:center; 
+  position:relative;
+  box-sizing: border-box;
+  text-align: center;
+  }
+  
+  .borrower{
+    position:relative;
+    right:1150px;
+    top:100px;
+  }
+  
+  .co-borrower{
+    position:relative;
+    right:550px;
+    bottom:160px; 
+  
+  }
+  .co-maker{
+    position:relative;
+    left:50px;
+    bottom:305px;
+    
+  }
+  
+  .salary-tab{
+    position:relative;
+    top:100px;
+    right:600px;
+  }
+  
+  .tab-1{
+    position:relative;
+    right:1000px;
+    top:60px; 
+  }
+  .tab-2{
+    position:relative;
+    right:120px;
+    bottom:405px;
+    
+  }
+  .tab-3{
+    position:relative;
+    top:100px;   
+    right:1000px
+  
+  }
+  
+  .tab-4{
+    position:relative;
+    right:120px;
+    bottom:367px;
+  }
+  .info{
+    position:absolute;
+    right:120px; 
+  }
+  .tab-transaction{
+    display:none;
+  }
+/* #iMessage {
+    width: 75%;
+    margin-left: 186px;
+    margin-top: 3%;
+    text-align: left;
+    padding: 1% 1% 1% 1%;
+} */
+
+/* #rMessage {
+  width: 75%;
+    margin-left: 186px;
+    margin-top: 3%;
+    text-align: left;
+    padding: 1% 1% 1% 1%;
+}
+
+#rRemark {
+  width: 75%;
+    margin-left: 186px;
+    margin-top: 3%;
+    text-align: left;
+    padding: 1% 1% 1% 1%;
+}
+
+#pMessage {
+  width: 75%;
+    margin-left: 186px;
+    margin-top: 3%;
+    text-align: left;
+    padding: 1% 1% 1% 1%;
+}
+
+#pRemark {
+  width: 75%;
+    margin-left: 186px;
+    margin-top: 3%;
+    text-align: left;
+    padding: 1% 1% 1% 1%;
+} */
+
+/* #iCategory {
+  width: 25%;
+  text-align: center;
+  margin-left: 532px;
+} */
+
+.pads {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#btnSubmit {
+    margin-top: 15px;
+}
+
+#btnApprove {
+  margin-top: 15px;
+}
+
+#btnReject {
+  margin-top: 15px;
+}
+
+.status {
+  text-align: left;
+  font-size: 95%;
+}
+
+.text-status {
+  float: right;
+  font-size: 87%;
+  position: relative;
+}
+
+#dateToday {
+  /* text-align: right; */
+  margin-right: 2%;
+  margin-top: -3%;
+  float: right;
+  position: relative;
+  font-style: italic;
+}
+
+#smallLogo {
+  width: 100%;
+  height: 75px;
+}
+
+#btnRequest {
+  padding: 0.7% 0.7% 0.7%;
+}
+
+#btnDone {
+  position: relative;
+  margin-top: 50px;
+}
+
+#btnSD{
+  position: relative;
+  margin-top: 50px;
+}
+
+#btnR{
+  /* float: center; */
+  /* position: center; */
+  position: relative;
+  margin-top: 50px;
+  margin-right: 0.3%;
+
+}
+
+#btnA{
+  /* position: center; */
+  /* float: center; */
+  position: relative;
+  margin-top: 50px;
+  /* margin-top: 192px; */
+}
+
+#r_Image {
+  float: left;
+}
+
+#rStatus {
+  float: center;
+  position: center;
+  width: 75%;
+}
+/* #rStatus2 {
+  float: center;
+  position: relative;
+  margin-top: -20.29%;
+  width: 80%;
+} */
+
+.float {
+  float: center;
+  position: relative;
+}
+
+.checkD {
+  display: none;
+  /* width: 0; */
+}
+/* .success { 
+  background: skyblue;
+  padding: 5px 10px;
+  text-align: center;
+
+} */
+
+/* body{
+  text-align: center;
+}
+
+
+h5{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #656565;
+  margin: 30px 0 20px;
+}
+
+
+.container-fluid{
+  margin: 0;
+}
+
+.form-head{
+  display: inline-block;
+  background-color: #fff;
+  width: 23rem;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.logo-image{
+  height: 6rem;
+  width: 20rem;
+  margin: 10px 0;
+}
+
+.signin-text{
+  font-size: small;
+  color: #656565;
+  font-weight: bold;
+}
+
+.form-body{
+  text-align: left;
+} */

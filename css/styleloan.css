@@ -1,0 +1,191 @@
+/* @media only screen and (max-width: 768px) {
+  #salary{
+    max-width: 100%;
+    height: auto;
+  }
+} */
+/* FONT-SIZE OF TAB MENU TITLES */
+ul li{
+  font-size:150%;
+}
+
+/* FILE INPUT ALIGNING TO TEXT */
+input[type="file"] {
+  display:inline-block;
+  vertical-align: top;
+  width:220px;  
+  font-size: 85%;
+}
+
+/* TEXT ALIGNMENT */
+#microfinance{
+  text-align: left;
+}
+#salary{
+  text-align: left;
+}
+#corporation{
+  text-align: left;
+}
+#individual{
+  text-align: left;
+}
+
+/* WIDTH AND TEXT FONT-SIZE */
+.micro-labels{ 
+  display: flex;
+  align-items: left;
+  text-align: left;
+  width: 20em;
+  display:inline-block;
+  margin-left: 2%;
+  font-size:105%;
+  word-wrap: break-word;
+}
+.salary-labels{
+  display: flex;
+  align-items: left;
+  text-align: left;
+  width: 20em;
+  display:inline-block;
+  margin-left: 2%;
+  font-size:105%;
+}
+.corporation-label{
+  display: flex;
+  align-items: left;
+  text-align: left;
+  width: 400px;
+  font-size: 105%;
+  display:inline-block;
+  margin-left: 1%;
+}
+.individual-labels{
+  display: flex;
+  align-items: left;
+  text-align: left;
+  width: 400px;
+  font-size: 105%;
+  display:inline-block;
+  margin-left: 1%;
+
+}
+
+/* A HREF BUTTON WIDTH AND ALIGNMENT */
+#microfinance a{
+  display:inline-block;
+  min-width: 10px;
+  vertical-align: top;
+}
+#salary a{
+  display:inline-block;
+  min-width: 10px;
+  vertical-align: top;
+}
+#corporation a{
+  display:inline-block;
+  min-width: 10px;
+  vertical-align: top;
+}
+#individual a{
+  display:inline-block;
+  min-width: 10px;
+  vertical-align: top;
+}
+
+/* OPEN BUTTON SIZE AND ALIGNMENT */
+.btn.btn-outline-success.btnFile {
+  margin-right: 10%;
+  vertical-align:top;
+  margin-left: 15px;
+  font-size:90%;
+  height: 2em;
+  width:7em; 
+}
+
+#salary .btn.btn-outline-success.btnFile {
+  margin-right: 10%;
+  vertical-align:top;
+  margin-left: 15px;
+  font-size:90%;
+  height: 1.8em;
+  width:7em;
+    
+}
+
+/* DATE */
+.date-label{
+  float:right;
+  margin-right: 1%;
+  font-size: 100%;
+  vertical-align: top;
+}
+
+/* CHECK IMAGE */
+img[src='statusImage/check.png'] {
+  width: 23px;
+  height: 23px;
+  visibility: hidden;
+  display:inline-block;
+  vertical-align: top;
+}
+/* XMARK IMAGE */
+img[src='statusImage/xmark.png'] {
+  width: 23px;
+  height: 23px;
+  visibility: hidden;
+  display:inline-block;
+  vertical-align: top;
+}
+/* CHECKBOX COLORED REGARDLESS DISABLED */
+input[type="checkbox"][disabled] {
+  opacity: 1; 
+}
+/* APPROBVAL SELECTION SIZE */
+.form-group.d-flex{
+  font-size: auto;
+  height: 45px;
+}
+/* BORDER RIGHT */
+.col-8{
+  border-right: 1px solid #ccc;
+  height:auto;
+}
+
+/* OTHERS MICROFINANCE */
+.OTHERS .micro-labels {
+  width: 380px;
+  font-size: large;
+}
+/* OTHERS CORPORATION */
+.OTHERS .corporation-label{
+  width: 380px;
+  font-size: large;
+}
+/* OTHERS INDIVIDUAL */
+.OTHERS .individual-labels{
+  width: 380px;
+  font-size: large;
+}
+.OTHERS .salary-labels{
+  width: 380px;
+  font-size: large;
+}
+
+
+
+.links{
+  float:right;
+  margin-right:2em;
+  margin-top: 1em;
+}
+ .fa.fa-eye {
+  font-size: 27px;
+  margin-top: 2%;
+}
+#editableLabel {
+  display: inline; /* Make it inline to appear as plain text */
+  border: none; /* Remove the border */
+  outline: none; /* Remove the focus outline when clicked */
+  cursor: text; /* Change cursor style when hovering */
+}
