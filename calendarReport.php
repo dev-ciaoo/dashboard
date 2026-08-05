@@ -1,0 +1,304 @@
+<?php
+include('connection.php');
+require 'auth_check.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="devCiao">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap5.0.1.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/datatables-1.10.25.min.css" />
+  <title>OUR Bank</title>
+  <link rel="icon" type="images/x-icon" href="./logo/favicon.ico" />
+  <!-- Style -->
+  <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+  <style rel="stylesheet" type="text/css">
+@media screen and (max-width: 1921px){
+  @-ms-viewport { }
+  body {
+    zoom: 100%;
+  }
+}
+   /* 125% */
+   @media screen and (max-width: 1536px){
+  @-ms-viewport { }
+  body {
+    zoom: 80%;
+  }
+}
+
+/* @media screen and (max-width: 1746.45px){
+  @-ms-viewport { }
+  body {
+    zoom: 95%;
+  }
+} */
+  /* 150% */
+  @media screen and (max-width: 1281px){
+  @-ms-viewport { }
+  body {
+    zoom: 67%;
+  }
+  
+}
+
+@media screen and (max-width: 1098.14px){
+  @-ms-viewport { }
+  body {
+    zoom: 50%;
+  }
+}
+
+/* @media screen and (max-width: 2133.33px) {
+    @-ms-viewport { }
+    body {
+      zoom: 80%;
+    }
+  } */
+  table{
+    font-size: 12.4px;
+  }
+
+    h3{
+      font-family: "Source Sans Pro", sans-serif;
+      margin: 30px 0 20px;
+      color: #656565;
+    }
+
+    #reporttbl {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;  
+    }
+
+    #reporttbl th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      /* background-color: #04AA6D;
+      color: white; */
+      font-size: 11.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    /* #reporttbl tr:nth-child(even){
+      background-color: #f2f2f2;
+    } */
+
+    #reporttbl tbody tr:hover {
+      background-color: #ddd;
+    }
+
+    #inventorylogo {
+      width: 20%;
+      height: auto;
+    }
+
+    .flogo {
+      text-align: center;
+    }
+
+    #selectLeave {
+      float: left;
+      height: 30px;
+      width: 150px;
+      border: none;
+      outline: none;
+      /* background-color: yellow; */
+      position: fixed;
+      /* margin-left: 330px; */
+      /* margin-bottom: 140px; */
+      text-align: center;
+    }
+
+    #formReport {
+      /* border-radius: 50%; */
+      float: left;
+      border-style: groove;
+      /* background-color: red; */
+      padding-top: 0.5%;
+      padding-bottom: 2.3%;
+      padding-left: 30px;
+      margin-right: 1000px;
+    }
+
+    #btnFilter {
+      position: relative;
+      float: left;
+      margin-left: 30px;
+      height: 30px;
+      width: 80px;
+      border: none;
+    }
+
+    #dateTO {
+      float: left;
+      /* background-color: yellow; */
+      margin-left: -130px;
+      outline: none;
+      border: none;
+      height: 30px;
+      width: 150px;
+      /* text-align: center; */
+      font-size: 98%;
+    }
+    
+    #TO {
+      float: left;
+      outline: none;
+      margin-left: 70px;
+      border: none;
+      height: 30px;
+      width: 150px;
+      /* text-align: center; */
+      font-size: 98%;
+    }
+
+    #dateFROM {
+      float: left;
+      /* background-color: yellow; */
+      margin-right: -70px;
+      outline: none;
+      border: none;
+      height: 30px;
+      width: 150px;
+      /* text-align: center; */
+      font-size: 98%;
+    }
+
+    #formTitle {
+      margin-left: 160px;
+    }
+
+    .textSelect {
+      font-size: 80%;
+      font-style: italic;
+    }
+
+    div.dataTables_filter input {
+      visibility: visible;
+    }
+
+    label{
+      visibility: visible;
+      font-size: 14px;
+    }
+
+    #dateFROM, #dateTO, #leaveCheck, #leaveCheckk, #obCheck, #obCheckk,
+    #overCheck, #overCheckk, #disapprovedCheck, #disapprovedCheckk {
+      visibility: visible;
+    }
+
+    #selectBranch {
+      width: 30%;
+      /* margin-left: 160px; */
+      text-align: center;
+    }
+
+    .hiLi {
+      background-color: #48D1CC !important;
+    }
+    
+    #Hideee{
+      visibility: hidden;
+    }
+
+    .pagination, .dataTables_info{
+      font-size: 14px;
+    }
+
+    #leaveOption{
+      float: right;
+      width: 150px;
+      text-align: center;
+      border: 2px solid darkgrey;
+    }
+
+  </style>
+</head>
+<body oncontextmenu="return false;">
+<section class="leaveReport">
+  <div class="col-md-10 p-2">
+    <ul class="nav justify-content-end"> 
+    </ul>
+  </div>
+  <div class="flogo">
+    <img src="./logo/logo.png" id="inventorylogo" alt="invtrylogo" />
+    <div class="section-heading">
+      <h3>CALENDAR REPORT MONITORING</h3> 
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+      <div class="dataTables_filter" id="btnAdd">
+        </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-12">
+            <!-- <div class="col-md-8"> -->
+            <table id="reporttbl" class="table table-bordered" width="100%" height="auto" cellspacing="0">
+              <thead>
+                <th>Sender Name</th>
+                <th>Receiver Email</th>
+                <!-- <th>Branch</th> -->
+                <th>Event</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Date Posted</th>
+              </thead>
+              <tbody id = "tbody-insert">
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>                            <!-- Script -->
+<script src="js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/dt-1.10.25datatables.min.js"></script>
+
+        <!-- Fetch -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        var myTable = $('#reporttbl').DataTable({
+        "fnCreatedRow": function(nRow, aData, iDataIndex) {
+          $(nRow).attr('id', aData[0]);
+          // if(aData[7] == 'Waiting for Approval') {
+          //   $(nRow).addClass('hiLi');
+          // }
+        },
+        'serverSide': 'true',
+        'processing': 'true',
+        'paging': 'true',
+        'responsive': 'true',
+        'autoWidth': 'false',
+        'order': [],
+        'ajax': {
+          'url': 'fetch_calendar_report.php',
+          'type': 'post',
+        },
+        "aoColumnDefs": [{  
+            "bSortable": false,
+            "aTargets": [5] //total tables.
+          },
+        ]
+      });
+    });
+</script>
+</body>
+</html>
