@@ -1,0 +1,58 @@
+<?php
+include('connection.php');
+
+$output = array();
+
+$holdId = $_POST['holdId'];
+$sql = "SELECT a_otherSupport, date_Uploads, ah_remarks FROM holdoutloanarchive WHERE a_otherSupport <> '' AND a_holdLoanId = '$holdId'";
+
+$columns = array(
+	0 => 'id',
+    1 => 'a_holdLoanId',
+    2 => 'a_otherSupport',
+	3 => 'ah_remarks',
+	4 => 'date_Uploads'
+);
+
+if (isset($_POST['order'])) {
+	$column_index = $_POST['order'][0]['column'];
+	$order_direction = $_POST['order'][0]['dir'];
+	$column_name = $columns[$column_index];
+	$sql .= " ORDER BY " . $column_name . " " . $order_direction;
+} else {
+	$sql .= " ORDER BY id ASC";
+}
+
+if ($_POST['length'] != -1) {
+	$start = $_POST['start'];
+	$length = $_POST['length'];
+	$limit_condition_sql = $sql;
+	$limit_condition_sql .= " LIMIT  " . $start . ", " . $length . "";
+}
+
+$query = mysqli_query($con, $limit_condition_sql);
+$count_query = mysqli_query($con, $sql);
+$count_rows = mysqli_num_rows($count_query);
+$data = array();
+while ($row = mysqli_fetch_assoc($query)) {
+	$sub_array = array();
+	// $sub_array[] = '<a href="http://localhost/dashboard/' . $row['a_otherSupport'] . '" target="_blank"><button class="btn btn-primary btn-sm">Open File</button></a>';
+	$sub_array[] = '<a href="http://10.10.10.120/dashboard/' . $row['a_otherSupport'] . '" target="_blank"><button class="btn btn-primary btn-sm">Open File</button></a>';
+	if($row['ah_remarks'] != ''){
+		$sub_array[] = $row['ah_remarks'];
+	}else{
+		$sub_array[] = '';
+	}
+	$sub_array[] = $row['date_Uploads'];
+
+	$data[] = $sub_array;
+}
+
+$output = array(
+	'draw' => intval($_POST['draw']),
+	'recordsTotal' => $count_rows,
+	'recordsFiltered' => $count_rows,
+	'data' => $data,
+);
+echo json_encode($output);
+?>
